@@ -1,5 +1,5 @@
 function pj --description "Jump to a project"
-    RRset -l argc (count $argv)
+    set -l argc (count $argv)
 
     if test (count $PROJECT_PATHS) -eq 0
         echo 'Add some directories to the environment variable $PROJECT_PATHS to get started!'
